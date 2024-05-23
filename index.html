@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wing Guardians</title>
+        <!-- bootstrap  -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+
+        <!-- font awesome  -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+            integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+            <!-- aos link  -->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            
+        <link rel="stylesheet" href="index.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+
+    </head>
+    <body>
+        <!-- navbar  -->
+        <header class="header">
+            <img src="images/logo1.png" class="logo" alt>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <span>Our Work <i class="fas fa-caret-down"></i></span>
+                        <div class="dropdown-content">
+                            <p><a href="aboutus.html">About Us</a></p>
+                            <p><a href="history.html">History</a></p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <span>Guides & News <i
+                                class="fas fa-caret-down"></i></span>
+                        <div class="dropdown-content">
+                            <p><a href="guides.html">Guides</a></p>
+                            <p><a href="explore_birds.html">Explore
+                                    Birds</a></p>
+                        </div>
+                    </li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <a href="donate.html" class="donatebtn">Donate</a>
+                </ul>
+
+            </nav>
+        </header>
+        <div class="nav-bg"></div>
+
+        <!-- body -->
+        < class="container_index">
+
+            <!-- carousal slider -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide"
+                data-ride="carousal">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active col-12">
+                        <div class="slider-img slider-1 d-block w-100"
+                            alt="..."></div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nest to Sky Hope</h5>
+                            <p>From Nest to Sky: Rescuing Birds and Renewing Hope.</p>
+                            <a href="guides.html"><button class="discoverbtn">Discover</button></a>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide="prev">
+                                <i class="fas fa-chevron-left"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide="next">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item col-12">
+                        <div class="slider-img slider-4 d-block w-100"
+                            alt="..."></div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Harmony Refuge</h5>
+                            <p>In the Heart of Harmony, Birds Find Refuge and Renewal.</p>
+                            <a href="guides.html"><button class="discoverbtn">Discover</button></a>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide="prev">
+                                <i class="fas fa-chevron-left"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide="next">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item col-12">
+                        <div class="slider-img slider-3 d-block w-100"
+                            alt="..."></div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Compassionate Wingspan</h5>
+                            <p>Wingspan of Compassion: Saving Birds, One Rescue at a Time</p>
+                            <a href="guides.html"><button class="discoverbtn">Discover</button></a>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide="prev">
+                                <i class="fas fa-chevron-left"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide="next">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 2 iconic  -->
+            <div data-aos="fade-up">
+            <div class="iconic">
+                <div class="iconic1">
+                    <div>
+                        <i class="far fa-calendar-alt"
+                            style="color: #FFD43B;"></i>
+                    </div>
+                    <div>
+                        <h5>Our Future Work</h5>
+                        <p>Explore our following activities and plan</p>
+                    </div>
+                </div>
+                <div class="iconic1">
+                    <div>
+                        <i class="fa-solid fa-hand-holding-heart"
+                            style="color: #FFD43B;"></i> </div>
+                    <div>
+                        <h5>Way to Get Involved</h5>
+                        <p>Birds need our help. Here what we can do</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- blog info  -->
+            <div data-aos="fade-up">
+            <div class="blog_index container-fluid mt-5 p-3">
+                <div class="row">
+                    
+                    <div class="col-md-4">
+                        <div class="blog_text_index">
+                            <h4>Project F: Wetland Conservation Initiative</h4>
+                            <p>Our commitment to preserving wetland ecosystems led to the implementation of the Wetland Conservation Initiative. Through habitat restoration, water quality monitoring, and community engagement, we aimed to safeguard vital wetland habitats. These efforts contribute to the overall health of ecosystems and support diverse bird species dependent on wetland environments.</p>
+                            <a href="history.html"><button class="blog_index_readmore">Read More
+                                ></button></a>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col-md-8">
+                        <div class="blog_img_index">
+                            <img src="images/WetlandConserve.jpg" alt
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+            <!-- blog -->
+            <div data-aos="fade-right">
+            <div class="container swiper">
+                <h5>R E A D &nbsp; M O R E &nbsp; A B O U T &nbsp; O U R
+                    &nbsp; A C T I V I T I E S</h5>
+                <div class="slide-container">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-box">
+                                <img src="images/slider 1.jpg" alt />
+                            </div>
+                            <div class="blog_details_index">
+                                <!-- <img src="images/slider 2.jpg" alt="" /> -->
+                                <div class="cap-info">
+                                    <h3 class="blog_cap_index">This New App Looks to the Birds to Bolster Southeast Alaska’s Economy</h3>
+                                    <h4 class="blog_info_index">A birding trail developed by Audubon Alaska and partners seeks to shift the region away from reliance on extractive industries.</h4>
+                                    <a href="history.html">Read More ></a>
+                                       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-box">
+                                <img src="images/slider 2.jpg" alt />
+                            </div>
+                            <div class="blog_details_index">
+                                <!-- <img src="images/slider 4.jpg" alt="" /> -->
+                                <div class="cap-info">
+                                    <h3 class="blog_cap_index">Audubon Determines Method for Choosing the Best Places for Bird </h3>
+                                    <h4 class="blog_info_index">A new study proposes a conservation methodology that incorporates factors such as habitat type, migratory routes, </h4>
+                                    <a href="history.html">Read More ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-box">
+                                <img src="images/slider 4.jpg" alt />
+                            </div>
+                            <div class="blog_details_index">
+                                <!-- <img src="images/slider 2.jpg" alt="" /> -->
+                                <div class="cap-info">
+                                    <h3 class="blog_cap_index">Partnerships Help the Lights Out Program Expand in North Carolina </h3>
+                                    <h4 class="blog_info_index">The night sky looks darker–and the future looks brighter–for birds flying through Raleigh, North Carolina and beyond</h4>
+                                    <a href="history.html">Read More ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-box">
+                                <img src="images/pic.jpg" alt />
+                            </div>
+                            <div class="blog_details_index">
+                                <!-- <img src="images/slider 2.jpg" alt="" /> -->
+                                <div class="cap-info">
+                                    <h3 class="blog_cap_index">50 Years of Project Puffin: An Oral History of an Incredibly Audacious Idea </h3>
+                                    <h4 class="blog_info_index">In 1973 a young biologist hatched a plan to bring a charismatic seabird back to Maine. It was the start of a five-decade scientific</h4>
+                                    <a href="history.html">Read More ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-box">
+                                <img src="images/White-tailed-kite.webp" alt />
+                            </div>
+                            <div class="blog_details_index">
+                                <!-- <img src="images/slider 4.jpg" alt="" /> -->
+                                <div class="cap-info">
+                                    <h3 class="blog_cap_index">A Proposed Reset for Public Lands Could Be a Big Boost to Conservation</h3>
+                                    <h4 class="blog_info_index">The agency responsible for one-tenth of the country’s terrain aims to make healthy habitat a more prominent priority.</h4>
+                                    <a href="history.html">Read More ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            </div>
+
+            <!-- donation  -->
+            <div data-aos="fade-right">
+            <div class="guide_donate container-fluid mt-5 p-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="donate_text_guide py-2 px-2">
+                            <h1>BIRDS NEED YOU NOW</h1>
+                            <p>With three billion birds lost since 1970 and
+                                two-thirds of North American species at risk
+                                from climate change.</p>
+                            <div
+                                class="d-flex flex-column justify-content-between align-items-center m-auto">
+                                <a href="donate.html"
+                                    class="btn btn-primary donate_btn">Donate
+                                    <i
+                                        class="fas fa-hand-holding-usd"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 donate_pic">
+                        <img src="images/blue bird.png" alt>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- gallery  -->
+            <div data-aos="fade-up">
+            <div class="index_gallery">
+                <h1>Gallery</h1>
+                <div class="birds-gallery">
+                    <!-- Use Bootstrap card for each image -->
+                    <div class="card">
+                        <a href="view_birds_detail.html">
+                            <img src="images/Gurney’s-Pitta.jpg"
+                                class="card-img-top" alt="Gurney’s Pitta">
+                            <div class="card-body">
+                                <p class="card-text">Gurney’s Pitta</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="view_birds_detail.html">
+                            <img src="images/Helmeted-Hornbill.webp"
+                                class="card-img-top" alt="Gurney’s Pitta">
+                            <div class="card-body">
+                                <p class="card-text">Helmeted Hornbill</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="view_birds_detail.html">
+                            <img src="images/Asian-Vultures.jpg"
+                                class="card-img-top" alt="Gurney’s Pitta">
+                            <div class="card-body">
+                                <p class="card-text">Asian Vultures</p>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="view_birds_detail.html">
+                            <img src="images/Baer's-pochard.jpg"
+                                class="card-img-top" alt="Gurney’s Pitta">
+                            <div class="card-body">
+                                <p class="card-text">Baer's pochard</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <a href="explore_birds.html" class="see_more_gallery">See
+                    more Gallary ></a>
+            </div>
+            </div>
+
+            <!-- footer -->
+            <div data-aos="fade-up">
+            <div class="footer_container">
+                <!-- first part -->
+                <div class="first_part">
+                    <img src="images/logo1.png" alt>
+                    <p>Birds: Nature's vibrant poets, painting the skies
+                        with colors and melodies. </p>
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/"> <i
+                                class="fa-brands fa-facebook fa-2xl"
+                                style="color: #eff0f0;"></i></a>&nbsp;
+                        <a
+                            href="https://www.instagram.com/accounts/login/?hl=en"><i
+                                class="fa-brands fa-instagram fa-2xl"
+                                style="color: #eff0f0;"></i></a>&nbsp;
+                        <a href="https://accounts.google.com/signin"><i
+                                class="fa-brands fa-google fa-2xl"
+                                style="color: #eff0f0;"></i></a>
+                    </div>
+                </div>
+
+                <!-- second part -->
+                <div class="sec_part">
+                    <div class="cat_footer">
+                        <h3><a href="aboutus.html">About us</a></h3>
+                        <h3><a href="history.html">History</a></h3>
+                        <h3><a href="guides.html">Guides</a></h3>
+                        <h3><a href="explore_birds.html">Explore
+                                Birds</a></h3>
+                        <h3><a href="membership.html">Membership</a></h3>
+                        <h3 class="footer_donate"><a
+                                href="donate.html">Donate &nbsp;<i
+                                    class="fas fa-donate fa-spin"></i></a></h3>
+
+                    </div>
+
+                </div>
+
+                <!-- third part -->
+                <div class="third_part">
+                    <div class="get_in_touch">
+                        <h1>Get In Touch</h1>
+                        <h3><i class="fa-solid fa-location-dot"
+                                style="color: #ffffff;"></i>&nbsp;
+                            <span>location</span></h3>
+                        <h3><i class="fa-solid fa-phone"
+                                style="color: #ffffff;"></i>&nbsp;
+                            <span>09-123456789</span></h3>
+                        <h3><i class="fa-solid fa-envelope"
+                                style="color: #ffffff;"></i>&nbsp;
+                            <span>wingguardians@gmail.com</span></h3>
+                        <h3><i class="fa-solid fa-clock"
+                                style="color: #ffffff;"></i>&nbsp;
+                            <span>Sun-Saturday, 9:00 AM - 5:00
+                                PM</span></h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <h3>Copyright © 2024 Wing Guardians
+                </h3>
+            </div>
+            </div>
+
+            <!-- BACK TO TOP BUTTON -->
+            <div class="topbtn">
+                <a href="#" class="active"><i class="fa-solid fa-angles-up"></i></a>
+            </div>
+
+        </div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+            integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </body>
+</html>

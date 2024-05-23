@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+            <!-- aos link  -->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <link rel="stylesheet" href="index.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+
+        <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+body {
+  background-color: #FFF9F0;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.planContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5em 1em 1em 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;  
+}
+
+.plan {
+  background: white;
+  width: 20em;
+  height: 31rem;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 1em;
+  margin-bottom: 1em;
+  transition: transform 0.4s;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+}
+.plan .titleContainer {
+  background-color: #2a6e3ef4;
+  padding: 1.4em;
+}
+.plan .titleContainer .title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+}
+.plan .titleContainer .price {
+  font-size: 1.3em;
+  padding-top: 1em;
+  padding-bottom: 0.25em;
+  color: white;
+  font-weight: 500;
+  margin-top: 0;
+  display: inline-block;
+  width: 80%;
+}
+.plan .titleContainer .price p {
+  font-size: 1.45em;
+  display: inline-block;
+  margin: 0;
+}
+.plan .titleContainer .price span {
+  font-size: 1.0875em;
+  display: inline-block;
+}
+.plan .infoContainer {
+  padding: 1em;
+  color: #2d3b48;
+  box-sizing: border-box;
+}
+.plan .infoContainer .desc {
+  padding: 1em 0;
+  border-bottom: 2px solid #efefef;
+  margin: 0 auto;
+  width: 90%;
+}
+.plan .infoContainer .desc em {
+  font-size: 1em;
+  font-weight: 500;
+}
+.plan .infoContainer .features {
+  font-size: 1em;
+  list-style: none;
+  padding-left: 0;
+}
+.plan .infoContainer .features li {
+  padding: 0.5em;
+  font-size: 12px;
+}
+.plan .infoContainer .selectPlan {
+  border: 2px solid #30924e;
+  padding: 0.75em 1em;
+  border-radius: 2.5em;
+  cursor: pointer;
+  transition: all 0.25s;
+  margin: 1em auto;
+  box-sizing: border-box;
+  max-width: 70%;
+  display: block;
+  font-weight: 700;
+}
+.plan .infoContainer .selectPlan:hover {
+  background-color: #30924e;
+  color: white;
+}
+
+#free{
+  border: 2px solid #d9aa45;
+  padding: 0.75em 1em;
+  border-radius: 2.5em;
+  cursor: pointer;
+  transition: all 0.25s;
+  margin: 157px 3px 10px 47px;
+  box-sizing: border-box;
+  max-width: 70%;
+  display: block;
+  font-weight: 700;
+}
+
+#free:hover{
+    background-color: #d9aa45;
+  color: white;
+}
+
+#second{
+  border: 2px solid #153761b3;
+  padding: 0.75em 1em;
+  border-radius: 2.5em;
+  cursor: pointer;
+  transition: all 0.25s;
+  margin: 45px 3px 10px 47px;
+  box-sizing: border-box;
+  max-width: 70%;
+  display: block;
+  font-weight: 700;
+}
+
+#second:hover{
+    background-color: #153761b3;
+  color: white;
+}
+
+@media screen and (max-width: 25em) {
+  .planContainer {
+    margin: 0;
+  }
+  .planContainer .plan {
+    width: 100%;
+    margin: 1em 0;
+  }
+}
+</style>
+<link rel="stylesheet" href="nav_foot.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <header class="header">
+            <img src="images/logo1.png" class="logo" alt>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <span>Our Work <i class="fas fa-caret-down"></i></span>
+                        <div class="dropdown-content">
+                            <p><a href="aboutus.html">About Us</a></p>
+                            <p><a href="history.html">History</a></p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <span>Guides & News <i
+                                class="fas fa-caret-down"></i></span>
+                        <div class="dropdown-content">
+                            <p><a href="guides.html">Guides</a></p>
+                            <p><a href="explore_birds.html">Explore
+                                    Birds</a></p>
+                        </div>
+                    </li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <a href="donate.html" class="donatebtn">Donate</a>
+                </ul>
+
+            </nav>
+        </header>
+        <div class="nav-bg"></div>
+
+        <!-- membership  -->
+        <div class="planContainer">
+            <div class="plan">
+                <div class="titleContainer" style="background-color: #d9aa45;">
+                    <div class="title">Vlounteer</div>
+                    <div class="price">
+                        <p>$0 </p>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <div class="p desc"><em>Great for beginners</em></div>
+                    <ul class="features">
+                        <li><strong>Personalized certificate</strong></li>
+                    </ul><a id="free">Select Plan</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="titleContainer"
+                    style="background-color: #153761b3;">
+                    <div class="title">Bird Guardian</div>
+                    <div class="price">
+                        <p>$10 </p><span>/year</span>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <div class="p desc"><em>Commit 1 year, save
+                            birds!</em></div>
+                    <ul class="features">
+                        <li><strong>Exclusive updates and events</strong></li>
+                        <li><strong>Personalized certificate</strong></li>
+                        <li><strong>VIP access and expeditions</strong></li>
+                        <li><strong>Project recognition</strong></li>
+                        <li><strong>Join a dedicated steward
+                                community</strong></li>
+
+                    </ul><a id="second">Select Plan</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="titleContainer">
+                    <div class="title">Eternal Protector</div>
+                    <div class="price">
+                        <p>$80</p><span>/Lifetime</span>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <div class="p desc"><em> Save birds forever! Join
+                            today!</em></div>
+                    <ul class="features">
+                        <li><strong>Exclusive updates and events</strong></li>
+                        <li><strong>Personalized certificate</strong></li>
+                        <li><strong>VIP access and expeditions</strong></li>
+                        <li><strong>Perpetual legacy and advisory
+                                roles</strong></li>
+                        <li><strong>Lifetime expeditions</strong></li>
+                        <li><strong>Ensure everlasting bird conservation
+                                impact</strong></li>
+                    </ul><a class="selectPlan">Select Plan</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <div class="footer_container">
+            <!-- first part -->
+            <div class="first_part">
+                <img src="images/logo1.png" alt>
+                <p>Birds: Nature's vibrant poets, painting the skies
+                    with colors and melodies. </p>
+                <div class="social_icons">
+                    <a href="https://www.facebook.com/"> <i
+                            class="fa-brands fa-facebook fa-2xl"
+                            style="color: #eff0f0;"></i></a>&nbsp;
+                    <a
+                        href="https://www.instagram.com/accounts/login/?hl=en"><i
+                            class="fa-brands fa-instagram fa-2xl"
+                            style="color: #eff0f0;"></i></a>&nbsp;
+                    <a href="https://accounts.google.com/signin"><i
+                            class="fa-brands fa-google fa-2xl"
+                            style="color: #eff0f0;"></i></a>
+                </div>
+            </div>
+
+            <!-- second part -->
+            <div class="sec_part">
+                <div class="cat_footer">
+                    <h3><a href="aboutus.html">About us</a></h3>
+                    <h3><a href="history.html">History</a></h3>
+                    <h3><a href="guides.html">Guides</a></h3>
+                    <h3><a href="explore_birds.html">Explore
+                            Birds</a></h3>
+                    <h3><a href="membership.html">Membership</a></h3>
+                    <h3 class="footer_donate"><a
+                            href="donate.html">Donate &nbsp;<i
+                                class="fas fa-donate fa-spin"></i></a></h3>
+
+                </div>
+
+            </div>
+
+            <!-- third part -->
+            <div class="third_part">
+                <div class="get_in_touch">
+                    <h1>Get In Touch</h1>
+                    <h3><i class="fa-solid fa-location-dot"
+                            style="color: #ffffff;"></i>&nbsp;
+                        <span>location</span></h3>
+                    <h3><i class="fa-solid fa-phone"
+                            style="color: #ffffff;"></i>&nbsp;
+                        <span>09-123456789</span></h3>
+                    <h3><i class="fa-solid fa-envelope"
+                            style="color: #ffffff;"></i>&nbsp;
+                        <span>wingguardians@gmail.com</span></h3>
+                    <h3><i class="fa-solid fa-clock"
+                            style="color: #ffffff;"></i>&nbsp;
+                        <span>Sun-Saturday, 9:00 AM - 5:00
+                            PM</span></h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <h3>Copyright © 2024 Wing Guardians
+            </h3>
+        </div>
+        <script src="script.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </body>
+
+</html>
